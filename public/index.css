@@ -22,7 +22,7 @@ footer{
   font-size: small;
 }
 
-#days{
+#calendar{
   background-color: #4AD3A2;
 }
 
@@ -91,4 +91,22 @@ input{
   background-color: #0DB679;
 }#add:hover{
   background-color: #2aaa7b;
+}
+
+#days{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 90px 90px; 
+    grid-template-areas: 
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". . . . . . .";
+      padding: 5%;
+}
+
+.day{
+  background-color: 8CFFD6;
 }
