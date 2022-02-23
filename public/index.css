@@ -107,6 +107,8 @@ input{
       ". . . . . . ."
       ". . . . . . .";
       padding: 5%;
+      padding-top: 4%;
+      padding-bottom: 4%;
 }
 
 .day{
@@ -118,4 +120,16 @@ input{
 }.day:hover{
   background-color: #66DBB1;
   cursor: pointer;
+}
+
+#tasks{
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 10px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."; 
 }
