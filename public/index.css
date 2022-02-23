@@ -59,7 +59,7 @@ footer{
   cursor: pointer;
 }
 
-#month{
+#mois{
   margin: 0;
   padding: 0;
   font-size: large;
@@ -93,6 +93,7 @@ input{
   background-color: #0DB679;
 }#add:hover{
   background-color: #2aaa7b;
+  cursor: pointer;
 }
 
 #days{
@@ -123,13 +124,17 @@ input{
 }
 
 #tasks{
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 10px 0px; 
-  grid-template-areas: 
-    "."
-    "."
-    "."
-    "."; 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    ".";
+  padding: 35%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ev{
+  color: #343434;
 }
