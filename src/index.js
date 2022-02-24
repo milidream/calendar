@@ -34,7 +34,6 @@ function suivant(){
   let words = ratay.split(' ');
   mois.innerHTML = words[1];
   annee.innerHTML = now.getFullYear();
-  console.log(now);
   while(jours.hasChildNodes()){  
     jours.removeChild(jours.firstChild);
   };
@@ -54,11 +53,10 @@ function precedent(){
   let words = ratay.split(' ');
   mois.innerHTML = words[1];
   annee.innerHTML = now.getFullYear();
-  console.log(now);
   while(jours.hasChildNodes()){  
     jours.removeChild(jours.firstChild);
   };
-  for(let i=1; i<getDaysInMonth(now.getMonth()-1, now.getFullYear())+1; i++){
+  for(let i=1; i<getDaysInMonth(now.getMonth()+1, now.getFullYear())+1; i++){
     let newBtn = document.createElement("button");
     newBtn.setAttribute("class", "day");
     let numero = document.createTextNode(i);
