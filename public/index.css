@@ -28,17 +28,21 @@ footer{
 
 #event{
   background-color: #66DBB1;
+  padding-bottom: 2%;
 }
 
 #evenement{
+  font-size: 65px;
   color: #F2F2F2;
-  padding-top: 2%;
+  padding-top: 4%;
+  padding-bottom: 2%;
   margin: 0;
   text-align: center;
 }
 
 #todolist{
   padding: 1%;
+  padding-bottom: 2%;
   display: flex;
   justify-content: center;
 }
@@ -79,10 +83,12 @@ footer{
 }
 
 input{
-  border: 0;
+  border: 5px, #ffffff;
   border-radius: 7px;
   background-color: #E4E4E4;
   margin-right: 8px;
+  height: 40px;
+  width: 250px;
 }
 
 #add{
@@ -91,6 +97,8 @@ input{
   font-size: 10px;
   color: #E4E4E4;
   background-color: #0DB679;
+  height: 46px;
+  width: 100px;
 }#add:hover{
   background-color: #2aaa7b;
   cursor: pointer;
@@ -118,6 +126,7 @@ input{
   border: 0;
   border-radius: 7px;
   font-weight: bold;
+  height: 40px;
 }.day:hover{
   background-color: #66DBB1;
   cursor: pointer;
@@ -136,7 +145,7 @@ input{
 }
 
 .ev{
-  color: #343434;
+  color: #2aaa7b;
 }
 
 #annee{
