@@ -4,6 +4,8 @@ let next = document.querySelector("#next");
 let jours = document.querySelector("#days");
 let annee = document.querySelector("#annee");
 let day = document.querySelectorAll(".day");
+
+let add = document.querySelector("#add");
 const now = new Date();
 // let m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
@@ -47,3 +49,19 @@ function precedent(){
   generateDays();
 };
 previous.addEventListener("click", precedent);
+
+function aadd(){
+  let task = document.querySelector("#task").value;
+  let tasks = document.querySelector("#tasks");
+  var t = document.createTextNode("-"+task);
+  let p = document.createElement("P");
+  p.appendChild(t);
+  tasks.appendChild(p);
+  p.setAttribute("class", "ev")
+}
+add.addEventListener("click", aadd);
+
+task.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+  aadd();
+  }});
