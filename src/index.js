@@ -5,6 +5,7 @@ let jours = document.querySelector("#days");
 let annee = document.querySelector("#annee");
 let day = document.querySelectorAll(".day");
 const now = new Date();
+// let m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 function getDaysInMonth(month,year) {
   return new Date(year, month, 0).getDate();
@@ -23,6 +24,9 @@ function generateDays(){
     newBtn.setAttribute("class", "day");
     let numero = document.createTextNode(i);
     newBtn.appendChild(numero);
+    // if(now.getDate()==i && now.getMonth()!=i && now.getFullYear()==words[3]){
+    //   newBtn.style.backgroundColor = "#50c79d"
+    // }
     jours.appendChild(newBtn);
   };
 };
