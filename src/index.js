@@ -58,7 +58,7 @@ function aadd(){
   p.appendChild(t);
   tasks.appendChild(p);
   p.setAttribute("class", "ev")
-  document.querySelector("#task").innerHTML = " ";
+  document.querySelector("#task").value = " ";
 }
 add.addEventListener("click", aadd);
 
