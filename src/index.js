@@ -3,7 +3,7 @@ let previous = document.querySelector("#previous");
 let next = document.querySelector("#next");
 let jours = document.querySelector("#days");
 let annee = document.querySelector("#annee");
-let day = document.querySelectorAll(".day");
+const day = document.querySelectorAll(".day");
 
 let add = document.querySelector("#add");
 const now = new Date();
@@ -26,7 +26,7 @@ function generateDays(){
     newBtn.setAttribute("class", "day");
     let numero = document.createTextNode(i);
     newBtn.appendChild(numero);
-    // if(now.getDate()==i && now.getMonth()!=i && now.getFullYear()==words[3]){
+    // if(now.getDate()==i && now.getMonth()!=i && now.getFullYear()==){
     //   newBtn.style.backgroundColor = "#50c79d"
     // }
     jours.appendChild(newBtn);
@@ -58,7 +58,7 @@ function aadd(){
   p.appendChild(t);
   tasks.appendChild(p);
   p.setAttribute("class", "ev")
-  document.querySelector("#task").value = " ";
+  document.querySelector("#task").value = "";
 }
 add.addEventListener("click", aadd);
 
@@ -66,3 +66,8 @@ task.addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
   aadd();
   }});
+
+// day.forEach(button=>button.addEventListener("click", function(){
+//   window.scrollTo(0, document.body.scrollHeight)
+// }));
+
